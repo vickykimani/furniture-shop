@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var search: String = ""
     var body: some View {
         ZStack{
             Color("Bg")
                 .ignoresSafeArea()
             
-            VStack{
+            VStack (alignment: .leading){
                 AppBarView()
+                
+                TagLineView()
+                    .padding()
+                
+                HStack{
+                    HStack{
+                        Image("Search")
+                            .padding(.trailing, 8)
+                        TextField("Search Furniture", text: $search)
+                        
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10.0)
+                    .padding(.trailing)
+                    
+                    Image("Scan")
+                        .padding()
+                        .background(Color("Primary"))
+                        .cornerRadius(10.0)
+                }
+                
+                .padding(.horizontal)
+                
             }
             
         }
@@ -49,5 +74,16 @@ struct AppBarView: View {
             
         }
         .padding(.horizontal)
+    }
+}
+
+struct TagLineView: View {
+    var body: some View {
+        Text("Find The \nBest ")
+            .font(.custom("PlayfairDisplay-Regular", size: 28))
+            .foregroundColor(Color("Primary"))
+        + Text("Furniture!")
+            .font(.custom("PlayfairDisplay-Bold", size: 28))
+            .foregroundColor(Color("Primary"))
     }
 }
