@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FA12BE1298D17E1003C5FF2 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA12BE0298D17E1003C5FF2 /* HomeScreen.swift */; };
 		8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739625D8C14200F9A279 /* Furniture_appApp.swift */; };
 		8804739925D8C14200F9A279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739825D8C14200F9A279 /* ContentView.swift */; };
 		8804739B25D8C14400F9A279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8804739A25D8C14400F9A279 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FA12BE0298D17E1003C5FF2 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8804739325D8C14200F9A279 /* Furniture_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furniture_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8804739625D8C14200F9A279 /* Furniture_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appApp.swift; sourceTree = "<group>"; };
 		8804739825D8C14200F9A279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FA12BDF298D179C003C5FF2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6FA12BE0298D17E1003C5FF2 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		8804738A25D8C14200F9A279 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		8804739525D8C14200F9A279 /* Furniture_app */ = {
 			isa = PBXGroup;
 			children = (
+				6FA12BDF298D179C003C5FF2 /* Screens */,
 				880473C425D8C19E00F9A279 /* Fonts */,
 				8804739625D8C14200F9A279 /* Furniture_appApp.swift */,
 				8804739825D8C14200F9A279 /* ContentView.swift */,
@@ -285,6 +296,7 @@
 			files = (
 				8804739925D8C14200F9A279 /* ContentView.swift in Sources */,
 				8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */,
+				6FA12BE1298D17E1003C5FF2 /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
