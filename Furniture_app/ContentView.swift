@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Furniture_app
 //
-//  Created by Abu Anwar MD Abdullah on 14/2/21.
+//  Created by vicky on 2/2/23.
 //
 
 import SwiftUI
@@ -15,7 +15,7 @@ struct ContentView: View {
                 Color("Bg")
                     .ignoresSafeArea()
                 
-                VStack{
+                ScrollView{
                     Image("chair_1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -93,7 +93,7 @@ struct DescriptionView: View {
             }
             .padding(.vertical)
             
-            HStack{
+            HStack (alignment: .bottom){
                 VStack(alignment: .leading){
                     Text("Colors")
                         .fontWeight(.semibold)
@@ -106,25 +106,37 @@ struct DescriptionView: View {
                     }
                     
                 }
-                Button(action: {}) {
-                    Image(systemName: "minus")
-                        .padding(.all)
-                }
-                .frame(width: 30, height: 30)
-                .overlay(RoundedRectangle(cornerRadius: 50).stroke())
-                .foregroundColor(.black)
                 
-                Text("1")
-                    .font(.title2)
+                Spacer()
                 
-                Button(action: {}) {
-                    Image(systemName: "plus")
-                        .padding(.all)
+                VStack(alignment: .leading){
+                    Text("Quantity")
+                        .fontWeight(.semibold)
+                    
+                    HStack{
+                        Button(action: {}) {
+                            Image(systemName: "minus")
+                                .padding(.all)
+                        }
+                        .frame(width: 30, height: 30)
+                        .overlay(RoundedRectangle(cornerRadius: 50).stroke())
+                        .foregroundColor(.black)
+                        
+                        Text("1")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding(.horizontal, 8)
+                        
+                        Button(action: {}) {
+                            Image(systemName: "plus")
+                                .padding(.all)
+                        }
+                        .frame(width: 30, height: 30)
+                        .background(Color("Primary"))
+                        .clipShape(Circle())
+                        .foregroundColor(.white)
+                    }
                 }
-                .frame(width: 30, height: 30)
-                .background(Color("Primary"))
-                .clipShape(Circle())
-                .foregroundColor(.white)
             }
             
         }
