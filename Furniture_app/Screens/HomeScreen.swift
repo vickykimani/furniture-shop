@@ -80,12 +80,13 @@ struct HomeScreen: View {
                 
                 HStack{
                     BottomNavBarItem(image: Image("Home")) {}
-                    BottomNavBarItem(image: Image("fav")) {}
-                    BottomNavBarItem(image: Image("shop")) {}
+                    BottomNavBarItem(image: Image(systemName: "heart")) {}
+                    BottomNavBarItem(image: Image(systemName: "cart")) {}
                     BottomNavBarItem(image: Image("User")) {}
                 }
                 .padding()
                 .background(Color.white)
+                .foregroundColor(.black)
                 .clipShape(Capsule())
                 .padding(.horizontal)
                 .shadow(color: Color.white.opacity(0.15), radius: 8, x: 2, y: 6)
@@ -156,10 +157,11 @@ struct SearchAndScanView: View {
             .padding(.trailing)
             
             Button(action: {}) {
-                Image("Scan")
+                Image(systemName: "barcode.viewfinder")
                     .padding()
                     .background(Color("Primary"))
                     .cornerRadius(10.0)
+                    .foregroundColor(.white)
             }
             
             
