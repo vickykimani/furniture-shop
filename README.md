@@ -5,6 +5,8 @@
 
 
 
-<img src="screenshot1.png" width="128"/>
+<img src="screenshot1.png" width="128" alt="Homescreen Screenshot"/>
 
-![Product Details Screenshot](/screenshot2.png)
+<img src="screenshot2.png" width="128" alt="Product Details Screenshot"/>
+
+
