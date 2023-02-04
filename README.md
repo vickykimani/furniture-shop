@@ -3,5 +3,8 @@
 
 ### furniture shop app final UI
 
-![Homescreen Screenshot](/screenshot1.png)
+
+
+<img src="screenshot1.png" width="128"/>
+
 ![Product Details Screenshot](/screenshot2.png)
