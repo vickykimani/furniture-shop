@@ -7,6 +7,6 @@
 
 <img src="screenshot1.png" width="128" alt="Homescreen Screenshot"/>
 
-<img src="screenshot2.png" width="128" alt="Product Details Screenshot"/>
+<img src="screenshot2.png" width="128" align="left" alt="Product Details Screenshot"/>
 
 
