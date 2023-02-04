@@ -3,4 +3,4 @@
 
 ### furniture shop app final UI
 
-![App UI](/ui.png)
+![App UI](/screenshot1.png)
