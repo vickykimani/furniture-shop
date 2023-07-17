@@ -39,8 +39,7 @@
 
 ## Acknowledgments
 
-This project was developed using Xcode and Swift. It utilizes iOS frameworks and libraries to create a furniture shop UI.
-
+This project was carried out as part of a programming exercise and developed using Xcode and Swift. It utilizes iOS frameworks and libraries to create a furniture shop UI.
 ## License
 
 This project is released under the MIT License. See [LICENSE](LICENSE.md) for more details.
